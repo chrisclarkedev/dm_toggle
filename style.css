@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair+Display&family=Rubik:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'PT Serif', serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
+  text-align: center;
+  padding: 4rem;
+  transition: background 0.3s linear;
+  color: 0.3s linear;
+}
+
+h1 {
+  font-weight: bolder;
+}
+
+body.dark {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+.toggle-container {
+  position: relative;
+  top: 10px;
+  right: 10px;
+}
+
+label {
+  user-select: none;
+  cursor: pointer;
+  background-color: #1f1f1f;
+  width: 25px;
+  height: 25px;
+  border-radius: 25%;
+  display: inline-block;
+  transition: background 0.3s linear;
+}
+
+body.dark label {
+  background-color: #fff;
+}
+input {
+  visibility: hidden;
+}
